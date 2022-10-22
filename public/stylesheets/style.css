@@ -1,8 +1,70 @@
 body {
+  color: white;
+  height: 100vh;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #0B3142;
+}
+
+nav{
+  margin-top: -8.5vmin;
+  margin-left: -8.5vmin;
+  padding-top: 4vmin;
+  padding-bottom: 4vmin;
+  padding-left: 5vmin;
+  background-color: #0F5257;
+  width: 200vmin;
+}
+
+h1 {
+  font-size: 8vmin;
+}
+
+h2 {
+  font-size: 5vmin;
+}
+
+br {
+  margin-bottom: 5vmin;
+}
+
+input, select, button {
+  border: 0.5vmin solid #1EA896;
+  margin-bottom: 3vmin;
+  transition: 150ms;
+}
+
+p, label, button {
+  margin: 2vmin;
+  font-size: 3vmin;
+}
+
+button:hover, select:hover {
+  transform: scale(1.1);
+}
+
+input, select {
+  font-size: 2.5vmin;
+}
+
+th {
+  font-size: 2.8vmin;
+  padding-left: 1vmin;
+  padding-right: 2.5vmin;
+}
+
+td {
+  font-size: 2.5vmin;
 }
 
 a {
-  color: #00B7FF;
+  color: white;
+  font-size: 3.5vmin;
+  text-decoration: none;
+  padding-left: 2vmin;
+  padding-right: 3vmin;
+}
+
+a:hover {
+  text-decoration: underline;
 }
