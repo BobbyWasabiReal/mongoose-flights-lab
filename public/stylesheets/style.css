@@ -6,7 +6,7 @@ body {
   background-color: #0B3142;
 }
 
-nav{
+nav {
   margin-top: -8.5vmin;
   margin-left: -8.5vmin;
   padding-top: 4vmin;
@@ -41,6 +41,16 @@ p, label, button {
 
 button:hover, select:hover {
   transform: scale(1.1);
+}
+
+div {
+  margin: 1vmin;
+  font-size: 2.2vmin;
+}
+
+.subtitle {
+  margin-top: 3.5vmin;
+  font-size: 4.2vmin;
 }
 
 input, select {
