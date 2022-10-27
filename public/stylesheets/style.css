@@ -78,3 +78,22 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+#add-ticket {
+  border-radius: 25px;
+  background: #0F5257;
+  border: 0.4vmin solid rgb(0, 106, 0);
+  padding: 3vmin;
+  padding-top: 1vmin;
+  padding-bottom: 1vmin;
+  transition: 100ms;
+}
+
+#add-ticket:hover {
+  background: rgb(0, 106, 0);
+  text-decoration: none;
+}
+
+.badge {
+  font-size: 2.8vmin;
+}

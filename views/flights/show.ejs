@@ -1,15 +1,25 @@
 <%- include('../partials/header') %>
 
 <section id="flights">
-    <div class="subtitle">Airline: </div>
-    <div><%= flight.airline %></div>
-    <div class="subtitle">Airport: </div>
-    <div><%= flight.airport %></div>
-    <div class="subtitle">Flight Number: </div>
-    <div><%= flight.flightNo %></div>
-    <div class="subtitle">Departs: </div>
-    <div><%= flight.depart %></div>
-</section>
+  <div class="subtitle">Airline:</div>
+  <div><%= flight.airline %></div>
+  <div class="subtitle">Airport:</div>
+  <div><%= flight.airport %></div>
+  <div class="subtitle">Flight Number:</div>
+  <div><%= flight.flightNo %></div>
+  <div class="subtitle">Departs:</div>
+  <div><%= flight.depart %></div>
+  <div class="subtitle">Tickets:</div>
+  <ul>
+    <%- tickets.map(t =>
+      `<li>${t.seat}, $${t.price}</li>`
+    ).join('') %>
+  </ul>
+  </section><br>
+
+<h2></h2>
+<a href="/flights/<%= flight._id %>/tickets/new" id="add-ticket">Add Your Ticket</a>
+<br><br><br>
 
 <br><br><h2>Destinations:</h2>
 <form id="add-destination" method="POST"
@@ -21,11 +31,11 @@
         <option value="DEN">DEN</option>
         <option value="LAX">LAX</option>
         <option value="SAN">SAN</option>
-      </select><br>
+      </select> <br>
   <label>Date of Arrival:</label>
-  <input type="datetime-local" name="arrives"><br>
+  <input type="datetime-local" name="arrives"> <br>
   <input type="submit" value="Add Destination">
-</form>
+</form> <br>
 
 <% if (flight.destinations.length) { %>
   <table>
@@ -50,4 +60,4 @@
   <h4>No Destination Assigned Yet</h4>
 <% } %>
 
-<%- include('../partials/footer') %>
+<%- include('../partials/footer') %> <br> <br> <br>
